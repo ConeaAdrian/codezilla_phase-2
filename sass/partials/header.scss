@@ -1,2 +1,31 @@
-header.website-header {
+.header{
+    .navbar{
+        height: 48px;
+        width: calc(100% - 166px);
+        margin: 0 83px 42px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    
+      .burger{
+        float: right;
+        height: 25px;
+        width: 40px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-items: center;
+        cursor: pointer;
+      } 
+      .menulogo{
+          height: 3px;
+          width: 24px;
+          background-color: #356EAD;
+      }
+    
+ 
 }
