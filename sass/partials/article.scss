@@ -1,0 +1,97 @@
+.all-elements{
+    
+    .all-article{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+
+        
+        .content-article{
+            margin-top: 32px;
+            max-width: 859px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+
+            .img{
+                width: 300px;
+                height: 200px;
+                margin-right: 20px;
+            }
+            .content-article-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 200px;
+                padding-left: 20px;
+            }
+            .article-title{
+                font-family: 'Galien', sans-serif;
+                font-size: 28px;
+                line-height: 35px;
+                letter-spacing: 0.04em;
+                color: #1F3F68;
+            }
+           
+        }
+     
+        
+        .secondblock{
+            display: flex;
+            justify-content: space-between;
+
+            .popular-article{
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.popular-title{
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #356EAD;
+    opacity: 0.8;
+    align-self: flex-start;
+    margin-top: 56px;
+
+   
+}
+.article-text{
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.article-element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .authot{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 4%;
+        color: #1F3F68;
+    }
+    .data{
+        opacity: 0.4;
+        color: #000000;
+    }
+}
+.article-title{
+    font-family: 'Galien', sans-serif;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
