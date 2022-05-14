@@ -1,60 +1,70 @@
-.four-columns-panel{
-    width: 100%;
-    height: 250px;
-    background-image: url("/assets/img/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 56px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+.four-columns-panel {
+  width: 100%;
+  height: 250px;
+  background-image: url("/assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 56px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.main-info{
+  .main-info {
     width: 780px;
-     margin: 0 10px;
+    margin: 0 10px;
 
-.main-title{
-    font-size: 44px;
-    line-height: 74px;
-    letter-spacing: 4%;
-    color: #FFFFFF;
-}
-.main-text{
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.4);
-}
-}
+    .main-title {
+      font-size: 44px;
+      line-height: 74px;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-weight: 600;
+    }
+    .main-text {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 4%;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
 }
 
-.search{
-width: 940px;
-margin-bottom: 56px;
-position: relative;
+.search {
+  width: 940px;
+  margin-bottom: 0;
+  position: relative;
 
-input{
+  input {
     outline: none;
     width: 100%;
     height: 56px;
-    background: #F4F4F4;
+    background: #f4f4f4;
     border-radius: 10px;
     border: none;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     line-height: 19px;
     color: rgba(31, 63, 104, 0.6);
     padding-left: 74px;
     padding-right: 10px;
     box-sizing: border-box;
-}
-img{
+  }
+  button {
     opacity: 0.6;
     position: absolute;
     left: 25px;
     top: 16px;
-}
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  img {
+    opacity: 0.6;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 }

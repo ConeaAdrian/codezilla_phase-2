@@ -5,6 +5,11 @@
     <title>Codezilla internship - project 1</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Open+Sans:wght@300&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    <script src="/assets/js/lib/jquery.min.js"></script>
+    <script src="/assets/js/lib/slick.min.js"></script>
 </head>
 
 <body>
@@ -14,9 +19,7 @@
           <img class="logo" src="assets/img/Ellipse.png" alt="splash" />
         <div class="wrapper">
           <div class="burger">
-              <div class="menulogo"></div>
-              <div class="menulogo"></div>
-              <div class="menulogo"></div>
+            <img class="bookmark" src="/assets/img/bookmark.svg" alt="" style="width: 18px; height: 22px;">
           </div>
         </div>
     </div>
@@ -30,17 +33,22 @@
 </section>
 <div class="container">
 <div class="search">
-    <input type="search" name="search" placeholder="Search Article">
-    <img src="/assets/img/Vector.png" >
+    <input type="search" id="search" name="search" placeholder="Search Article">
+    <button class="searchSubmit"><img src="/assets/img/Vector.png"></button>
 </div>
 </div>
 
-<section class="popular">
-    <div class="container">
-       <div class="popular-content">
-           <div class="popular-title">popular</div>
-           <div class="first-context">
-               <div class="first-box">
+
+<!--Popup-->>
+    <div class="popup">
+        <!--arrow-->
+        <div class="popup-slider">
+            <span class="close-btn">X</span>
+
+            <!--Image-->
+            <img src="/assets/img/Rectangle5(2).png" class="popup-img" alt="" >
+            <div class="index">
+            
                 <div class="main-title">Massa eu vulputate nunc.</div>
                 <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
                 <div class="article-element">
@@ -53,18 +61,46 @@
                         <img class="share" src="/assets/img/share.svg" alt="" style="width: 18px; height: 22px;" >
                     </div>
                 </div>
+            
+        </div>
+               
+    </div>
+        
+        <button class="arrow-btn left-arrow"><img src="/assets/img/arrow_left.png" alt=""></button>
+        <button class="arrow-btn right-arrow"><img src="/assets/img/arrow_right.png" alt=""></button>
+    </div>
+
+<!-- section POPULAT -->
+<section class="popular">
+    <div class="container">
+       <div class="popular-content">
+           <div class="popular-title">popular</div>
+           <div class="first-context">
+               <div class="first-box">
+                <div class="main-article-title main-title">Feugiat sodales at nullam tellus.</div>
+                <div class="main-article-text article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
+                <div class="article-element">
+                    <div class="article-element-left">
+                        <div class="main-article-author authot">Samatha Leuthex</div>
+                        <div class="main-article-data data">May 5, 3 min read</div>
+                    </div>
+                    <div class="article-element-right">
+                        <img class="bookmark" src="/assets/img/bookmark.svg" alt="" style="width: 18px; height: 22px;">
+                        <img class="share" src="/assets/img/share.svg" alt="" style="width: 18px; height: 22px;" >
+                    </div>
+                </div>
                </div>
-               <img src="/assets/img/Rectangle 5 (9).png" alt="" >
+               <img src="/assets/img/Rectangle5(1).png" class="card-img-top" alt="" >
            </div>
 
 
 
-           <div class="row row-cols-1 row-cols-md-3 g-4 " style="margin-bottom: 22px">
+           <div class="small-articles row row-cols-1 row-cols-md-3 g-4 " style="margin-bottom: 22px">
             <div class="col">
               <div class="card h-100">
-                <img src="/assets/img/Rectangle 5 (4).png" class="card-img-top" alt="...">
+                <img src="/assets/img/Rectangle5(2).png" class="card-img-top" alt="...">
                 <div class="content-article-text">
-                    <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                    <div class="article-title">Porta proin tellus sed pulvinar odio eu pulvinar.</div>
                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
                     <div class="article-element">
                         <div class="article-element-left">
@@ -83,7 +119,7 @@
               <div class="card h-100">
                 <img src="/assets/img/Rectangle 5 (11).png" class="card-img-top" alt="...">
                 <div class="content-article-text">
-                    <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                    <div class="article-title">Non quam tortor, proin eu egestas scelerisque purus.</div>
                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
                     <div class="article-element">
                         <div class="article-element-left">
@@ -102,7 +138,7 @@
               <div class="card h-100">
                 <img src="/assets/img/Rectangle 5 (5).png" class="card-img-top" alt="...">
                 <div class="content-article-text">
-                    <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                    <div class="article-title">Amet amet sed pharetra risus sit eget interdum.</div>
                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
                     <div class="article-element">
                         <div class="article-element-left">
@@ -118,16 +154,20 @@
             </div>
           </div>
        </div>  
-       <div class="all-popular-content">SEE ALL POPULAR ARTICLE</div>
+       <div class="all-popular-content"><button id="all-popular-content">SEE ALL POPULAR ARTICLE</button></div>
     </div>
 </section>
 
+<!-- end section POPULAT -->
+
+
+<!-- section Elements -->
 <div class="all-elements">
     <div class="container">
         <div class="all-article">
            <div class="popular-title">All Article</div>
                 <div class="content-article">
-                <img src="/assets/img/Rectangle 5 (4).png" alt="">
+                <img src="/assets/img/Rectangle5(1).png" alt="">
                 <div class="content-article-text">
                     <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
@@ -141,17 +181,99 @@
                             <img class="share" src="/assets/img/share.svg" alt="" style="width: 18px; height: 22px;" >
                         </div>
                     </div>
-                </div>
-
-                
+                </div> 
+            </div>
         </div>
-    </div>
+
+        <div class="all-article">
+            <div class="popular-title">All Article</div>
+                 <div class="content-article">
+                 <img src="/assets/img/Rectangle5(1).png" alt="">
+                 <div class="content-article-text">
+                     <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
+                     <div class="article-element">
+                         <div class="article-element-left">
+                             <div class="authot">Samatha Leuthex</div>
+                             <div class="data">May 5, 3 min read</div>
+                         </div>
+                         <div class="article-element-right">
+                             <img class="bookmark" src="/assets/img/bookmark.svg" alt="" style="width: 18px; height: 22px;">
+                             <img class="share" src="/assets/img/share.svg" alt="" style="width: 18px; height: 22px;" >
+                         </div>
+                     </div>
+                 </div> 
+             </div>
+         </div>
+
+         <div class="all-article">
+            <div class="popular-title">All Article</div>
+                 <div class="content-article">
+                 <img src="/assets/img/Rectangle5(1).png" alt="">
+                 <div class="content-article-text">
+                     <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
+                     <div class="article-element">
+                         <div class="article-element-left">
+                             <div class="authot">Samatha Leuthex</div>
+                             <div class="data">May 5, 3 min read</div>
+                         </div>
+                         <div class="article-element-right">
+                             <img class="bookmark" src="/assets/img/bookmark.svg" alt="" style="width: 18px; height: 22px;">
+                             <img class="share" src="/assets/img/share.svg" alt="" style="width: 18px; height: 22px;" >
+                         </div>
+                     </div>
+                 </div> 
+             </div>
+         </div>
+
+         <div class="all-article">
+            <div class="popular-title">All Article</div>
+                 <div class="content-article">
+                 <img src="/assets/img/Rectangle5(1).png" alt="">
+                 <div class="content-article-text">
+                     <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
+                     <div class="article-element">
+                         <div class="article-element-left">
+                             <div class="authot">Samatha Leuthex</div>
+                             <div class="data">May 5, 3 min read</div>
+                         </div>
+                         <div class="article-element-right">
+                             <img class="bookmark" src="/assets/img/bookmark.svg" alt="" style="width: 18px; height: 22px;">
+                             <img class="share" src="/assets/img/share.svg" alt="" style="width: 18px; height: 22px;" >
+                         </div>
+                     </div>
+                 </div> 
+             </div>
+         </div>
+
+         <div class="all-article">
+                 <div class="content-article">
+                 <img src="/assets/img/Rectangle5(1).png" alt="">
+                 <div class="content-article-text">
+                     <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                     <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
+                     <div class="article-element">
+                         <div class="article-element-left">
+                             <div class="authot">Samatha Leuthex</div>
+                             <div class="data">May 5, 3 min read</div>
+                         </div>
+                         <div class="article-element-right">
+                             <img class="bookmark" src="/assets/img/bookmark.svg" alt="" style="width: 18px; height: 22px;">
+                             <img class="share" src="/assets/img/share.svg" alt="" style="width: 18px; height: 22px;" >
+                         </div>
+                     </div>
+                 </div> 
+             </div>
+         </div>
+
     <div class="all-article">
      
             <div class="content-article">
             <img src="/assets/img/Rectangle 5 (5).png" alt="">
             <div class="content-article-text">
-                <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+                <div class="article-title">Feugiat a euismod arcu feugiat posuere morbi.</div>
                 <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
                 <div class="article-element">
                     <div class="article-element-left">
@@ -171,7 +293,7 @@
         <div class="content-article">
         <img src="/assets/img/Rectangle 5 (6).png" alt="">
         <div class="content-article-text">
-            <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+            <div class="article-title">Sociis purus pellentesque faucibus vitae et felis.</div>
             <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
             <div class="article-element">
                 <div class="article-element-left">
@@ -191,7 +313,7 @@
         <div class="content-article">
         <img src="/assets/img/Rectangle 5 (7).png" alt="">
         <div class="content-article-text">
-            <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+            <div class="article-title">Cursus feugiat mi pellentesque mauris sed eu.</div>
             <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
             <div class="article-element">
                 <div class="article-element-left">
@@ -208,10 +330,10 @@
 </div>
 <div class="all-article">
     
-        <div class="content-article">
+    <div class="content-article">
         <img src="/assets/img/Rectangle 5 (8).png" alt="">
         <div class="content-article-text">
-            <div class="article-title">Massa eu in laoreet enim augue vulputate nunc.</div>
+            <div class="article-title">A morbi arcu curabitur etiam fringilla augue.</div>
             <div class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</div>
             <div class="article-element">
                 <div class="article-element-left">
@@ -231,25 +353,26 @@
     </div>
 </div>
 
+<!-- end section Elements -->
 
 
 <footer class="website-footer">
     <div class="container">
         <div class="content-row">
         <div class="row-left">
+            <img class="arrow-new" src="/assets/img/new_post.png" alt="">
             <a href="#">New Post</a>
         </div>
         <div class="row-right">
             <a href="#">Old Post</a>
+            <img class="arrow-old" src="/assets/img/old_post.png" alt="">
         </div>
         </div>
     </div>
 </footer>
 
-<script src="/assets/js/lib/jquery.min.js"></script>
-<script src="/assets/js/lib/slick.min.js"></script>
-<script src="/assets/js/scripts.min.js"></script>
 
+<script src="/assets/js/scripts.min.js"></script>
 </body>
 
 </html>

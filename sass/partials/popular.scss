@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Open+Sans:wght@300&family=Stint+Ultra+Condensed&display=swap');
+
 .popular{
     display: flex;
     flex-direction: column;
@@ -16,7 +18,7 @@
             justify-content: space-between;
             margin: 32px 0;
             overflow: hidden;
-
+            display: none;
 
             .first-box{
 
@@ -26,7 +28,7 @@
                 justify-content: space-between;
 
                 .main-title{
-                    font-family: 'Stint Ultra Condensed', sans-serif;
+                    font-family: 'Stint Ultra Condensed', cursive;
                     font-size: 48px;
                     line-height: 58px;
                     letter-spacing: 0.04em;
@@ -69,4 +71,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.small-articles {
+    display: none;
 }
