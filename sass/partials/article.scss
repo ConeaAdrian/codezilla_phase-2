@@ -46,7 +46,7 @@
   line-height: 25px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #356ead;
+  color: $color-3;
   opacity: 0.8;
   align-self: flex-start;
   margin-top: 56px;
@@ -55,7 +55,7 @@
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: $black;
   opacity: 0.6;
 }
 
@@ -68,16 +68,35 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 4%;
-    color: #1f3f68;
+    color: $color-1;
   }
   .data {
     opacity: 0.4;
-    color: #000000;
+    color: $black;
   }
 }
 .article-title {
   font-size: 28px;
   line-height: 35px;
   letter-spacing: 0.04em;
-  color: #1f3f68;
+  color: $color-1;
+}
+
+.bookmark-btn{
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+#all-popular-content{
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,0);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: $color-3;
 }

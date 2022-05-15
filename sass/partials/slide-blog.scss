@@ -18,7 +18,7 @@
     .main-title {
       font-size: 44px;
       line-height: 74px;
-      color: #ffffff;
+      color: $white;
       font-family: "Open Sans";
       font-weight: 600;
     }
@@ -43,12 +43,8 @@
     background: #f4f4f4;
     border-radius: 10px;
     border: none;
-    font-family: "Work Sans", sans-serif;
     font-size: 16px;
-    line-height: 19px;
-    color: rgba(31, 63, 104, 0.6);
     padding-left: 74px;
-    padding-right: 10px;
     box-sizing: border-box;
   }
   button {
